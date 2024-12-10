@@ -1,0 +1,142 @@
+:root {
+    --dark-purple: #331436;
+    --redbg-btn: #CB4F57;
+    --text-btn: #FCF4B6;
+    --sectionOneBg: #7A1745;
+
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    min-width: 1440px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px;
+    background-color: var(--dark-purple);
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-text-wrapper {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    font-size: 28px;
+}
+
+.red-btn {
+    width: 240px;
+    height: 48px;
+    background-color: var(--redbg-btn);
+    color: var(--text-btn);
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    line-height: 24px;
+}
+
+#sectionOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 496px;
+    padding: 30px 170px;
+    background-color: var(--sectionOneBg);
+    color: white;
+    
+    text-align: center;
+}
+
+.leftItemWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 520px;
+    gap: 24px 0px;
+    
+}
+
+#sectionOne img {
+    width: 540px;
+    height: 437px;
+}
+
+.title-text {
+    font-weight: bold;
+    font-size: 40px;
+    min-width: 520px;
+    line-height: 48px;
+}
+
+.description-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#sectionOne span {
+    color: var(--text-btn);
+}
+
+#sectionTwo {
+    height: 792px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 60px 170px;
+    gap: 60px;
+}
+
+.upTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.purple-btn {
+    width: 240px;
+    height: 48px;
+    background-color: var(--dark-purple);
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-purple);
+}
+
+.card img {
+    width: 340px;
+    height: 340px;
+}
+
+.subtitle-card {
+    font-size: 20px;
+    font-weight: 500;
+}
