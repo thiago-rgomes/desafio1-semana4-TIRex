@@ -1,8 +1,9 @@
 :root {
     --dark-purple: #331436;
-    --redbg-btn: #CB4F57;
-    --text-btn: #FCF4B6;
-    --sectionOneBg: #7A1745;
+    --light-red: #CB4F57;
+    --light-yellow-text: rgb(252, 244, 182);
+    --light-yellow-bg: rgb(252, 244, 182, 50%);
+    --dark-pink: #7A1745;
 
   }
 
@@ -16,6 +17,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     min-width: 1440px;
@@ -47,8 +49,8 @@ header {
 .red-btn {
     width: 240px;
     height: 48px;
-    background-color: var(--redbg-btn);
-    color: var(--text-btn);
+    background-color: var(--light-red);
+    color: var(--light-yellow-text);
     font-size: 16px;
     border-radius: 8px;
     border: none;
@@ -62,7 +64,7 @@ header {
     gap: 60px;
     height: 496px;
     padding: 30px 170px;
-    background-color: var(--sectionOneBg);
+    background-color: var(--dark-pink);
     color: white;
     
     text-align: center;
@@ -85,24 +87,19 @@ header {
 .title-text {
     font-weight: bold;
     font-size: 40px;
-    min-width: 520px;
     line-height: 48px;
 }
 
-.description-text {
-    font-size: 16px;
-    line-height: 24px;
-}
 
 #sectionOne span {
-    color: var(--text-btn);
+    color: var(--light-yellow-text);
 }
 
 #sectionTwo {
     height: 792px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     padding: 60px 170px;
     gap: 60px;
 }
@@ -139,4 +136,66 @@ header {
 .subtitle-card {
     font-size: 20px;
     font-weight: 500;
+    margin-top: 4px;
+}
+
+.card-text-wrapper {
+
+    padding: 12px;
+}
+
+#sectionThree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 552px;
+    padding: 60px 170px;
+    gap: 60px;
+    background-color: var(--light-yellow-bg);
+    color: var(--dark-purple);
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 24px;
+    height: 168px;
+}
+
+.bottom-wrapper {
+    display: flex;
+    height: 204px;
+    gap: 40px;
+}
+
+.circle-item {
+    padding: 12px 0;
+    width: 245px;
+    height: 204px;
+    text-align: center;
+
+}
+
+.icon-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark-purple);
+    border-radius: 50%;
+    margin: 0 auto;
+   
+}
+.circle-item img {
+    width: 48px;
+    height: 48px;    
+    
+}
+
+.icon-title {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 6px;
 }
