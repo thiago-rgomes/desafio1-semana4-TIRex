@@ -17,8 +17,7 @@
             <img id="logo" src="assets/logo-header.png" alt="imagem do logo">
             <p>Project Manager<p>    
         </div>
-        
-        <button class="red-btn">Login</button>
+        <nav><a href="../login-page/index.html"><button class="red-btn">Login</button></a></nav>           
  
     </header>
 
@@ -28,7 +27,7 @@
             <div class="leftItemWrapper">
                 <h1 class="title-text">Welcome to <span>Project Manager</span> </h1>
                 <p class="description-text">Get your projects and ideas in order, all in one place! Sign up now and discover a smarter way to manage your work with efficiency and teamwork</p>
-                <button class="red-btn"> Get Started</button>
+                <a href="../login-page/index.html"><button class="red-btn"> Get Started</button></a> 
             </div>
 
             <img src="assets/sectionOne-img.png" alt="imagem de uma mulher olhando um fluxograma">
@@ -113,54 +112,58 @@
             </div>
 
             <div class="subscription-form">
-                <form action="">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <form id="subscription-form">
+                    <div class="email-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <small>We promise not to spam</small>
+                        <div id="email-error" class="error-one"></div>
+                    </div>
 
-                    <small>We promise not to spam</small>
-
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
-
-                    <button type="submit" class="purple-btn">Subscribe</button>
-                </form>
+                    <div class="name-wrapper">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        <div id="name-error" class="error-two"></div> 
+                    </div>
+                    <button type="submit" id="subscribe-btn" class="purple-btn">Subscribe</button>
+                </form>                
             </div>
 
-        </section>
-
-        <footer>
-            <div class="icon-container">
-                <div class="media-icon">
-                    <div class="icon-bg-white">
-                        <a href="https://www.facebook.com">
-                            <img src="assets/icons/facebook-icon.png" alt="icone do facebook">
-                        </a>
-                    </div>
-                </div>
-                <div class="media-icon">
-                    <div class="icon-bg-white">
-                        <a href="https://www.instagram.com">
-                            <img src="assets/icons/instagram-icon.png" alt="icone do instagram">
-                        </a>
-                    </div>
-                </div>
-                <div class="media-icon">
-                    <div class="icon-bg-white">
-                        <a href="https://www.linkedin.com">
-                            <img src="assets/icons/linkedin-icon.png" alt="icone do linkedin">
-                        </a>
-                    </div>
-                </div>                
-            </div>
-            <div class="footer-text-container">
-                <p>© 2024 Project Manager. All rights reserved.</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
-            </div>
-            
-        </footer>
+        </section>        
 
     </main>
+
+    <footer>
+        <div class="icon-container">
+            <div class="media-icon">
+                <a href="https://www.facebook.com">
+                    <div class="icon-bg-white">
+                        <img src="assets/icons/facebook-icon.png" alt="ícone do facebook">
+                    </div>
+                </a>
+            </div>
+            <div class="media-icon">
+                <a href="https://www.instagram.com">
+                    <div class="icon-bg-white">
+                        <img src="assets/icons/instagram-icon.png" alt="icone do instagram">
+                    </div>
+                </a>
+            </div>
+            <div class="media-icon">
+                <a href="https://www.linkedin.com">
+                    <div class="icon-bg-white">
+                        <img src="assets/icons/linkedin-icon.png" alt="icone do linkedin">
+                    </div>
+                </a>
+            </div>                
+        </div>
+        <div class="footer-text-container">
+            <p>© 2024 Project Manager. All rights reserved.</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+        </div>
+        
+    </footer>
 
     <script src="script.js"></script>    
 </body>
