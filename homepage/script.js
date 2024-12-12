@@ -35,7 +35,6 @@ subscribeBtn.addEventListener('click', function (event) {
     localStorage.setItem("subscription", JSON.stringify({ email, name }));
     alert("Subscription successful!");
 
-    document.getElementById("name").value = "";
     }
 });
 
