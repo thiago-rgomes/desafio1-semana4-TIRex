@@ -5,6 +5,7 @@
     --light-yellow-bg: rgb(252, 244, 182, 50%);
     --dark-pink: #7A1745;
     --transparent-white: #FFFFFF1A;
+    --card-background: #F8F2FF;
 
   }
 
@@ -123,13 +124,153 @@ ul li a:active {
 
 }
 
+#sectionOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 170px;
+    height: 746px;
+    gap: 60px;
+    font-weight: 500;
+    background-color: #0000001A;
 
+}
 
+.to-do, .in-progress, .complete {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 626px;
+    padding: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--dark-purple);
+    background-color: white;
+    border-radius: 8px;
+    gap: 10px;
 
+}
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 127px;
+    padding: 10px;
+    border: 1px solid var(--dark-purple);
+    border-radius: 8px;
+    gap: 10px;
+    font-size: 10px;
+    background-color: var(--card-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+}
 
+.card-middle {
+    font-size: 12px;
+    font-weight: 800;
+}
 
+.card-top, .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.high {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 15px;
+    background-color: #CB4F57;
+    color: #7A1745;
+    border: 1px solid #7A1745;
+    border-radius: 8px;
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 15px;
+    background-color: #EB9961;
+    color: #CB4F57;
+    border: 1px solid #CB4F57;
+    border-radius: 8px;
+}
+
+.low{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 15px;
+    background-color: #FCF4B6;
+    color: #EB9961;
+    border: 1px solid #EB9961;
+    border-radius: 8px;
+
+}
+
+.card-top .date {
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.card-bottom {
+    width: 180px;
+    height: 39px;
+    padding: 7px 5px;
+}
+.card-bottom img {
+    width: 20px;
+    height: 20px;
+}
+
+.member-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
+    width: 133px;
+    height: 25px;
+}
+
+.member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+}
+
+.purple {
+    background-color: #801E8F;
+}
+
+.dark-blue {
+    background-color: #2E4B83;
+}
+
+.pink {
+    background-color: #D92B93;
+}
+
+.green {
+    background-color: #1A712D;
+}
+
+.brown {
+    background-color: #AF4A00;
+}
 
 
 footer {
