@@ -4,7 +4,8 @@
     --light-yellow-text: rgb(252, 244, 182);
     --light-yellow-bg: rgb(252, 244, 182, 50%);
     --dark-pink: #7A1745;
-
+    --light-purple: #47204b;
+    --real-light-red: #da6068;
   }
 
 * {
@@ -56,6 +57,11 @@ header {
     border: none;
     line-height: 24px;
     cursor: pointer;
+}
+
+.red-btn:hover {
+    background-color: var(--real-light-red);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #sectionOne {
@@ -120,6 +126,12 @@ header {
     color: white;
     line-height: 24px;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.purple-btn:hover {
+    background-color: var(--light-purple);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card-wrapper {
@@ -262,6 +274,54 @@ header {
     color: red;
     font-size: 12px;
     height: 20px;    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid yellow;
+    width: 800px;
+    height: 200px;
+    max-width: 500px;
+    background-image: url("assets/tirex-bg.png");
+    background-size: cover; 
+    background-position: center; 
+    color: rgba(255, 255, 255, 0.89);
+}
+
+.modal-content h2 {
+    margin-bottom: 30px;
+    color: yellow;
+}
+
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 

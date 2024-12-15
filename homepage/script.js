@@ -1,5 +1,8 @@
 let subscribeBtn = document.getElementById("subscribe-btn");
 
+let successModal = document.getElementById("success-modal");
+let closeBtn = document.getElementById("close-btn");
+
 subscribeBtn.addEventListener('click', function (event) {
     event.preventDefault(); 
 
@@ -17,7 +20,7 @@ subscribeBtn.addEventListener('click', function (event) {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     const nameRegex = /^[a-zA-Zá-üÁ-ÜçÇ]{2,20}$/;
 
-    // Validação do email
+    // Validação
     if (!emailRegex.test(email)) {
         emailError.textContent = "Please enter a valid email address.";
         isValid = false;
@@ -33,17 +36,19 @@ subscribeBtn.addEventListener('click', function (event) {
     if (isValid) {   
 
     localStorage.setItem("subscription", JSON.stringify({ email, name }));
-    alert("Subscription successful!");
-
+    successModal.style.display = "block";
+    document.getElementById("email").value = "";
+    document.getElementById("name").value = "";
     }
 });
 
+closeBtn.addEventListener('click', function () {
+    successModal.style.display = "none";
+});
 
 
-
-
-
-
-
-
-
+window.addEventListener('click', function (event) {
+    if (event.target === successModal) {
+        successModal.style.display = "none";
+    }
+});

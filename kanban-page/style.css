@@ -6,7 +6,8 @@
     --dark-pink: #7A1745;
     --transparent-white: #FFFFFF1A;
     --card-background: #F8F2FF;
-
+    --light-purple: #47204b;
+    --real-light-red: #da6068;
   }
 
 * {
@@ -43,6 +44,12 @@ body {
     color: white;
     line-height: 24px;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.purple-btn:hover {
+    background-color: var(--light-purple);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 

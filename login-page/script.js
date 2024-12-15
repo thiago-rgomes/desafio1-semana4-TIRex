@@ -34,9 +34,6 @@ subscribeBtn.addEventListener('click', function (event) {
     
     if (isValid) {   
 
-    localStorage.setItem("subscription", JSON.stringify({ email, password }));
-    alert("Subscription successful!");
-
     window.location.href = "../kanban-page/index.html";
 
     }
